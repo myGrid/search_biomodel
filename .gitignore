@@ -1,5 +1,6 @@
 #Application stuff:
 .idea
+.rvmrc
 
 # rcov generated
 coverage
