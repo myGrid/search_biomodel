@@ -1,3 +1,6 @@
+#Application stuff:
+.idea
+
 # rcov generated
 coverage
 
