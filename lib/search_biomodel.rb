@@ -23,7 +23,7 @@ module SysMODB
     end
 
 
-    def models(search_string)
+    def models(search_string,limit=20)
       #collect results from sub-methods
       results = Array.new
       results << @connection.search_by_name(search_string)
@@ -33,7 +33,7 @@ module SysMODB
       #turn into one big array, remove duplicates and select first X
       results = results.flatten
       results = results.uniq
-      results = results.first(10)
+      results = results.first(limit)
 
       sbml_results = Array.new
 
